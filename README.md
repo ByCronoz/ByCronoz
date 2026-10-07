@@ -6,14 +6,14 @@
 
 <img src="./divider.svg" width="100%" height="4" alt="" />
 
-## Contribuições
+<img src="./contrib.svg" width="100%" alt="Contribuições" />
 
 <div align="center">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/github-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/github-snake.svg" />
-  <img alt="snake" src="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/github-snake-dark.svg" />
+  <img alt="Contribuições" src="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/github-snake-dark.svg" width="100%" />
 </picture>
 
 </div>

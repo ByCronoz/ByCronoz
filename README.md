@@ -1,16 +1,21 @@
-## Hi there 👋
+<div align="center">
 
-<!--
-**ByCronoz/ByCronoz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<img src="imagem_comprimida.webp" width="220" alt="ByCronoz" />
 
-Here are some ideas to get you started:
+# Olá, eu sou o ByCronoz 👋
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Dev focado em backend e infraestrutura 💜  
+Trabalho na [Nythric](https://github.com/nythric)
+
+![Node](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+
+</div>
+
+## 🛠️ O que eu faço
+- Painéis e sistemas de pagamento
+- Automação e servidores (VPS)
+
+## 📊 Estatísticas
+![Stats](https://github-readme-stats.vercel.app/api?username=ByCronoz&show_icons=true&theme=radical&hide_border=true)

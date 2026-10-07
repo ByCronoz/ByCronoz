@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="./hero.svg" width="100%" alt="ByCronoz - Vibe Coder" />
+<img src="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/hero.svg" width="100%" alt="ByCronoz - Vibe Coder" />
 
 </div>
 
-<img src="./divider.svg" width="100%" height="4" alt="" />
+<img src="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/divider.svg" width="100%" height="4" alt="" />
 
-<img src="./contrib.svg" width="100%" alt="Contribuições" />
+<img src="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/contrib.svg" width="100%" alt="Contribuições" />
 
 <div align="center">
 
@@ -18,7 +18,7 @@
 
 </div>
 
-<img src="./divider.svg" width="100%" height="4" alt="" />
+<img src="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/divider.svg" width="100%" height="4" alt="" />
 
 ## Linguagens
 

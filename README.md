@@ -106,7 +106,7 @@ const ByCronoz = {
 <div align="center">
 
 <!-- Troque SEU_ID e os links abaixo pelos seus -->
-<a href="https://discord.com/users/SEU_ID"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" /></a>
+<a href="https://discord.com/users/1184725282653995038"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" /></a>
 <a href="https://github.com/nythric"><img src="https://img.shields.io/badge/Nythric-9d4edd?style=for-the-badge&logo=github&logoColor=white" /></a>
 
 <br/><br/>

@@ -1,103 +1,29 @@
 <div align="center">
 
-```text
-    ____        ______                          
-   / __ )__  __/ ____/________  ____  ____  ____
-  / __  / / / / /   / ___/ __ \/ __ \/ __ \/_  /
- / /_/ / /_/ / /___/ /  / /_/ / / / / /_/ / / /_
-/_____/\__, /\____/_/   \____/_/ /_/\____/ /___/
-      /____/                                    
-```
-
-**VIBE CODER**
-
-`Painéis` · `Bots` · `Sistemas web` · `Automação`
+<img src="./hero.svg" width="100%" alt="ByCronoz - Vibe Coder" />
 
 </div>
 
----
+<img src="./divider.svg" width="100%" height="4" alt="" />
 
-## Sobre
+## Contribuições
 
-```console
-$ whoami
-ByCronoz
+<div align="center">
 
-$ cat perfil.txt
-vibe coder
-atuo na Nythric
-construo painéis, bots, sistemas web e automações com IA
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/github-snake.svg" />
+  <img alt="snake" src="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/github-snake-dark.svg" />
+</picture>
 
-$ echo $STACK
-C#  Go  Next.js  Vite  Node.js  Python
-```
+</div>
 
-> [!NOTE]
-> Sou vibe coder: eu defino o que construir, a IA escreve comigo e eu entrego.
+<img src="./divider.svg" width="100%" height="4" alt="" />
 
----
+## Linguagens
 
-## Stack
+<div align="center">
 
-| Área | Tecnologias |
-| :-- | :-- |
-| **Backend** | C# · Go · Node.js · Python |
-| **Frontend** | Next.js · Vite |
-| **Foco** | Painéis · Bots · Sistemas web · Automação |
+<img src="https://skillicons.dev/icons?i=cs,go,nextjs,vite,nodejs,py&theme=dark&perline=6" alt="C#, Go, Next.js, Vite, Node.js, Python" />
 
-```mermaid
-%%{init: {'theme':'dark','themeVariables':{'primaryColor':'#6d28d9','primaryTextColor':'#ffffff','primaryBorderColor':'#c77dff','lineColor':'#c77dff','secondaryColor':'#be185d','tertiaryColor':'#1e1033'}}}%%
-mindmap
-  root((ByCronoz))
-    Backend
-      C#
-      Go
-      Node.js
-      Python
-    Frontend
-      Next.js
-      Vite
-    Entrego
-      Painéis
-      Bots
-      Sistemas web
-      Automação
-```
-
----
-
-## Como eu trabalho
-
-```mermaid
-%%{init: {'theme':'dark','themeVariables':{'primaryColor':'#6d28d9','primaryTextColor':'#ffffff','primaryBorderColor':'#c77dff','lineColor':'#ff4fa3'}}}%%
-flowchart LR
-    A([Ideia]) --> B[Prompt]
-    B --> C[IA gera o código]
-    C --> D{Funciona?}
-    D -- não --> B
-    D -- sim --> E[Teste]
-    E --> F([Deploy])
-```
-
----
-
-## Organização
-
-<details>
-<summary><b>Nythric</b></summary>
-
-<br/>
-
-Projetos que desenvolvo na [Nythric](https://github.com/nythric).
-
-</details>
-
----
-
-## Contato
-
-| | |
-| :-- | :-- |
-| **GitHub** | [@ByCronoz](https://github.com/ByCronoz) |
-| **Organização** | [Nythric](https://github.com/nythric) |
-| **Discord** | `seu_usuario` |
+</div>

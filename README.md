@@ -1,4 +1,4 @@
-<h1 align="center">ByCronoz</h1>
+<h3 align="center">ByCronoz</h3>
 
 <p align="center">
   Vibe coder. Painéis, bots, sistemas web e automações.
@@ -10,17 +10,17 @@
   <a href="https://github.com/MilyBot"><img src="https://wsrv.nl/?url=github.com/MilyBot.png&w=128&h=128&fit=cover&mask=circle&maxage=1w" width="64" height="64" alt="MilyBot" title="MilyBot" /></a>
 </p>
 
----
+<br/>
 
-### Stack
+<h3 align="center">Stack</h3>
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=cs,go,nextjs,vite,nodejs,py&theme=dark&perline=6" alt="C#, Go, Next.js, Vite, Node.js, Python" />
 </p>
 
----
+<br/>
 
-### Contribuições
+<h3 align="center">Contribuições</h3>
 
 <p align="center">
   <picture>

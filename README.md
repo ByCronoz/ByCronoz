@@ -1,7 +1,17 @@
+<h3 align="center">Contribuições</h3>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/github-snake.svg" />
+    <img alt="Contribuições" src="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/github-snake-dark.svg" width="100%" />
+  </picture>
+</p>
+
 <h3 align="center">ByCronoz</h3>
 
 <p align="center">
-  Vibe coder. Painéis, bots, sistemas web e automações.
+  Meus Projetos
 </p>
 
 <p align="center">
@@ -39,13 +49,3 @@
 </p>
 
 <br/>
-
-<h3 align="center">Contribuições</h3>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/github-snake.svg" />
-    <img alt="Contribuições" src="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/github-snake-dark.svg" width="100%" />
-  </picture>
-</p>

@@ -1,4 +1,4 @@
-name: Gerar perfil
+name: Gerar cobrinha
 
 on:
   schedule:
@@ -14,58 +14,6 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - name: Gerar icones animados das organizacoes
-        env:
-          ORGS: "nythric MilyBot"
-        run: |
-          python3 - <<'PYEOF'
-          import base64, os, urllib.request
-
-          ORGS = os.environ.get("ORGS", "nythric MilyBot").split()
-          os.makedirs("dist", exist_ok=True)
-
-          TEMPLATE = """<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="__NAME__">
-          <defs>
-          <clipPath id="r"><rect x="16" y="16" width="88" height="88" rx="24"/></clipPath>
-          <linearGradient id="sh" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".3"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
-          <filter id="b" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter>
-          </defs>
-          <style>
-          .f{animation:fl 3.6s ease-in-out infinite}
-          .ring{animation:gl 2.4s ease-in-out infinite}
-          .glow{animation:gl 2.4s ease-in-out infinite}
-          .sh{animation:sw 3.6s ease-in-out infinite}
-          @keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
-          @keyframes gl{0%,100%{opacity:.3}50%{opacity:1}}
-          @keyframes sw{0%{transform:translateX(-60px)}60%,100%{transform:translateX(130px)}}
-          </style>
-          <g class="f">
-          <rect class="glow" x="20" y="22" width="80" height="84" rx="24" fill="#7c3aed" opacity=".5" filter="url(#b)"/>
-          <image href="data:__MIME__;base64,__B64__" xlink:href="data:__MIME__;base64,__B64__" x="16" y="16" width="88" height="88" clip-path="url(#r)" preserveAspectRatio="xMidYMid slice"/>
-          <g clip-path="url(#r)"><rect class="sh" x="16" y="16" width="44" height="88" fill="url(#sh)"/></g>
-          <rect class="ring" x="14" y="14" width="92" height="92" rx="26" fill="none" stroke="#7c3aed" stroke-width="2.5"/>
-          </g>
-          </svg>"""
-
-          def fetch(org):
-              req = urllib.request.Request("https://github.com/%s.png?size=160" % org, headers={"User-Agent": "profile-readme"})
-              with urllib.request.urlopen(req, timeout=30) as r:
-                  return r.read()
-
-          for org in ORGS:
-              try:
-                  data = fetch(org)
-              except Exception as e:
-                  print("aviso: nao foi possivel baixar o avatar de", org, e)
-                  continue
-              mime = "image/jpeg" if data[:3] == b"\xff\xd8\xff" else "image/png"
-              svg = (TEMPLATE.replace("__NAME__", org).replace("__MIME__", mime)
-                     .replace("__B64__", base64.b64encode(data).decode()))
-              with open("dist/org-%s.svg" % org.lower(), "w", encoding="utf-8") as f:
-                  f.write(svg)
-              print("ok:", org)
-          PYEOF
-
       - uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}

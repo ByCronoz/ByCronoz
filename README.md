@@ -6,6 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/nythric"><img src="https://img.shields.io/badge/org-Nythric-7c3aed?style=flat-square&labelColor=141416" alt="Nythric" /></a>
+  <a href="https://github.com/MilyBot"><img src="https://img.shields.io/badge/org-MilyBot-7c3aed?style=flat-square&labelColor=141416" alt="MilyBot" /></a>
 </p>
 
 ---

@@ -5,8 +5,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/nythric"><img src="https://img.shields.io/badge/org-Nythric-7c3aed?style=flat-square&labelColor=141416" alt="Nythric" /></a>
-  <a href="https://github.com/MilyBot"><img src="https://img.shields.io/badge/org-MilyBot-7c3aed?style=flat-square&labelColor=141416" alt="MilyBot" /></a>
+  <a href="https://github.com/nythric"><img src="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/org-nythric.svg" width="84" height="84" alt="Nythric" title="Nythric" /></a>
+  <a href="https://github.com/MilyBot"><img src="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/org-milybot.svg" width="84" height="84" alt="MilyBot" title="MilyBot" /></a>
 </p>
 
 ---
@@ -27,4 +27,4 @@
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/github-snake.svg" />
     <img alt="Contribuições" src="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/github-snake-dark.svg" width="100%" />
   </picture>
-</p>
+</p>****

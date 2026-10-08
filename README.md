@@ -5,8 +5,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/nythric"><img src="https://images.weserv.nl/?url=github.com/nythric.png&w=112&h=112&fit=cover&mask=roundrect" width="56" height="56" alt="Nythric" title="Nythric" /></a>
-<a href="https://github.com/MilyBot"><img src="https://images.weserv.nl/?url=github.com/MilyBot.png&w=112&h=112&fit=cover&mask=roundrect" width="56" height="56" alt="MilyBot" title="MilyBot" /></a>
+  <a href="https://github.com/nythric"><img src="https://wsrv.nl/?url=github.com/nythric.png&w=128&h=128&fit=cover&mask=circle&maxage=1w" width="64" height="64" alt="Nythric" title="Nythric" /></a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/MilyBot"><img src="https://wsrv.nl/?url=github.com/MilyBot.png&w=128&h=128&fit=cover&mask=circle&maxage=1w" width="64" height="64" alt="MilyBot" title="MilyBot" /></a>
 </p>
 
 ---
@@ -27,4 +28,46 @@
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/github-snake.svg" />
     <img alt="Contribuições" src="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/github-snake-dark.svg" width="100%" />
   </picture>
-</p>****
+</p>
+
+<!-- espaco invisivel: empurra o bloco de atividade para baixo -->
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>

@@ -12,10 +12,39 @@
 
 <br/>
 
-<h3 align="center">Stack</h3>
+<h3 align="center">Sobre</h3>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=cs,go,nextjs,vite,nodejs,py&theme=dark&perline=6" alt="C#, Go, Next.js, Vite, Node.js, Python" />
+  Trabalho na Nythric e na MilyBot criando painéis, bots, sistemas web e automações.<br/>
+  Transformo ideias em produto rápido, construindo com IA.
+</p>
+
+<br/>
+
+<h3 align="center">Stack</h3>
+
+<p align="center"><sub><b>LINGUAGENS</b></sub></p>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=cs,go,py&theme=dark" alt="C#, Go, Python" />
+</p>
+
+<p align="center"><sub><b>WEB</b></sub></p>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=nextjs,vite,nodejs&theme=dark" alt="Next.js, Vite, Node.js" />
+</p>
+
+<p align="center"><sub><b>FERRAMENTAS</b></sub></p>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=git,github,vscode&theme=dark" alt="Git, GitHub, VS Code" />
+</p>
+
+<br/>
+
+<h3 align="center">Estatísticas</h3>
+
+<p align="center">
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=ByCronoz&show_icons=true&theme=transparent&hide_border=true&title_color=a78bfa&icon_color=7c3aed&text_color=e4e4e7" alt="Estatísticas" />
+  <img height="160" src="https://streak-stats.demolab.com?user=ByCronoz&theme=transparent&hide_border=true&ring=7c3aed&fire=a78bfa&currStreakNum=e4e4e7&sideNums=e4e4e7&currStreakLabel=a78bfa&sideLabels=a78bfa&dates=71717a" alt="Sequência" />
 </p>
 
 <br/>
@@ -29,45 +58,3 @@
     <img alt="Contribuições" src="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/github-snake-dark.svg" width="100%" />
   </picture>
 </p>
-
-<!-- espaco invisivel: empurra o bloco de atividade para baixo -->
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>

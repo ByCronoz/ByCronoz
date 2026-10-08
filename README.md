@@ -5,8 +5,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/nythric"><img src="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/org-nythric.svg" width="84" height="84" alt="Nythric" title="Nythric" /></a>
-  <a href="https://github.com/MilyBot"><img src="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/org-milybot.svg" width="84" height="84" alt="MilyBot" title="MilyBot" /></a>
+  <a href="https://github.com/nythric"><img src="https://images.weserv.nl/?url=github.com/nythric.png&w=112&h=112&fit=cover&mask=roundrect" width="56" height="56" alt="Nythric" title="Nythric" /></a>
+<a href="https://github.com/MilyBot"><img src="https://images.weserv.nl/?url=github.com/MilyBot.png&w=112&h=112&fit=cover&mask=roundrect" width="56" height="56" alt="MilyBot" title="MilyBot" /></a>
 </p>
 
 ---

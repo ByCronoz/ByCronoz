@@ -31,17 +31,6 @@
 
 <h3 align="center">Stack</h3>
 
-<p align="center"><sub><b>LINGUAGENS</b></sub></p>
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=cs,go,py&theme=dark" alt="C#, Go, Python" />
-</p>
-
-<p align="center"><sub><b>WEB</b></sub></p>
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=nextjs,vite,nodejs&theme=dark" alt="Next.js, Vite, Node.js" />
-</p>
-
-<p align="center"><sub><b>FERRAMENTAS</b></sub></p>
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=git,github,vscode&theme=dark" alt="Git, GitHub, VS Code" />
+  <img src="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/stack.svg" width="760" alt="C#, Go, Python, Next.js, Vite, Node.js, Git, GitHub, VS Code" />
 </p>

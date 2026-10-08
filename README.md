@@ -1,8 +1,11 @@
 <h1 align="center">ByCronoz</h1>
 
 <p align="center">
-  Vibe coder. Painéis, bots, sistemas web e automações.<br/>
-  <a href="https://github.com/nythric">Nythric</a>
+  Vibe coder. Painéis, bots, sistemas web e automações.
+</p>
+
+<p align="center">
+  <a href="https://github.com/nythric"><img src="https://img.shields.io/badge/org-Nythric-7c3aed?style=flat-square&labelColor=141416" alt="Nythric" /></a>
 </p>
 
 ---

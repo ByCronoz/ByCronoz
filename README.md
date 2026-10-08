@@ -1,29 +1,26 @@
-<div align="center">
+<h1 align="center">ByCronoz</h1>
 
-<img src="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/hero.svg" width="100%" alt="ByCronoz - Vibe Coder" />
+<p align="center">
+  Vibe coder. Painéis, bots, sistemas web e automações.<br/>
+  <a href="https://github.com/nythric">Nythric</a>
+</p>
 
-</div>
+---
 
-<img src="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/divider.svg" width="100%" height="4" alt="" />
+### Stack
 
-<img src="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/contrib.svg" width="100%" alt="Contribuições" />
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=cs,go,nextjs,vite,nodejs,py&theme=dark&perline=6" alt="C#, Go, Next.js, Vite, Node.js, Python" />
+</p>
 
-<div align="center">
+---
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/github-snake.svg" />
-  <img alt="Contribuições" src="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/github-snake-dark.svg" width="100%" />
-</picture>
+### Contribuições
 
-</div>
-
-<img src="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/divider.svg" width="100%" height="4" alt="" />
-
-## Linguagens
-
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=cs,go,nextjs,vite,nodejs,py&theme=dark&perline=6" alt="C#, Go, Next.js, Vite, Node.js, Python" />
-
-</div>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/github-snake.svg" />
+    <img alt="Contribuições" src="https://raw.githubusercontent.com/ByCronoz/ByCronoz/output/github-snake-dark.svg" width="100%" />
+  </picture>
+</p>

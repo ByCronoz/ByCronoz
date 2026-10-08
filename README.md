@@ -5,18 +5,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/nythric"><img src="https://wsrv.nl/?url=github.com/nythric.png&w=128&h=128&fit=cover&mask=circle&maxage=1w" width="64" height="64" alt="Nythric" title="Nythric" /></a>
+  <a href="https://github.com/nythric"><img src="https://wsrv.nl/?url=github.com/nythric.png&w=128&h=128&fit=cover&mask=circle&maxage=1w" alt="Nythric" title="Nythric" /></a>
   &nbsp;&nbsp;
-  <a href="https://github.com/MilyBot"><img src="https://wsrv.nl/?url=github.com/MilyBot.png&w=128&h=128&fit=cover&mask=circle&maxage=1w" width="64" height="64" alt="MilyBot" title="MilyBot" /></a>
-</p>
-
-<br/>
-
-<h3 align="center">Sobre</h3>
-
-<p align="center">
-  Trabalho na Nythric e na MilyBot criando painéis, bots, sistemas web e automações.<br/>
-  Transformo ideias em produto rápido, construindo com IA.
+  <a href="https://github.com/MilyBot"><img src="https://wsrv.nl/?url=github.com/MilyBot.png&w=128&h=128&fit=cover&mask=circle&maxage=1w" alt="MilyBot" title="MilyBot" /></a>
 </p>
 
 <br/>

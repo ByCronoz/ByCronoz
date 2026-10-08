@@ -1,8 +1,8 @@
-name: Gerar perfil animado
+name: Gerar cobrinha
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 */12 * * *"
   workflow_dispatch:
   push:
     branches: [main]
@@ -14,136 +14,12 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - name: Gerar banner, titulo e divisoria (SVG)
-        run: |
-          python3 - <<'PYEOF'
-          import random, os
-          os.makedirs("dist", exist_ok=True)
-          random.seed(7)
-          W, H = 1000, 300
-          lines = ["Painéis, bots e sistemas web", "C# • Go • Next.js • Vite • Node.js • Python", "Vibe coding todo dia"]
-          cw = 14.4
-          N = len(lines)
-          s = 1.0 / N
-          widths = [len(t) * cw for t in lines]
-          lefts = [W / 2 - w / 2 for w in widths]
-
-          def kv(points):
-              pts = []
-              for t, v in points:
-                  if pts and abs(pts[-1][0] - t) < 1e-6:
-                      pts[-1] = (t, v)
-                  else:
-                      pts.append((t, v))
-              return ";".join(f"{t:.4f}" for t, _ in pts), ";".join(f"{v:.1f}" for _, v in pts)
-
-          clips = ""
-          texts = ""
-          cp = []
-          for i, t in enumerate(lines):
-              t0 = i * s
-              tf = t0 + .35 * s
-              th = t0 + .8 * s
-              te = t0 + .9 * s
-              pts = [(0, 0)]
-              if t0 > 0:
-                  pts.append((t0, 0))
-              pts += [(tf, widths[i]), (th, widths[i]), (te, 0), (1, 0)]
-              k, v = kv(pts)
-              clips += f'<clipPath id="c{i}"><rect x="{lefts[i]:.1f}" y="200" height="44" width="0"><animate attributeName="width" dur="12s" repeatCount="indefinite" keyTimes="{k}" values="{v}"/></rect></clipPath>'
-              texts += f'<text x="{lefts[i]:.1f}" y="230" textLength="{widths[i]:.1f}" lengthAdjust="spacingAndGlyphs" clip-path="url(#c{i})" class="type">{t}</text>'
-              cp += [(t0, lefts[i]), (tf, lefts[i] + widths[i]), (th, lefts[i] + widths[i]), (te, lefts[i])]
-          cp.append((1, lefts[0]))
-          k, v = kv(cp)
-          cursor = f'<rect y="204" width="3" height="30" rx="1.5" fill="#ff4fa3" class="blink"><animate attributeName="x" dur="12s" repeatCount="indefinite" keyTimes="{k}" values="{v}"/></rect>'
-
-          stars = ""
-          for i in range(34):
-              x = random.randint(10, W - 10)
-              y = random.randint(10, H - 10)
-              r = random.choice([1, 1.2, 1.6, 2])
-              stars += f'<circle cx="{x}" cy="{y}" r="{r}" fill="#fff" class="star" style="animation-delay:{random.uniform(0, 4):.2f}s;animation-duration:{random.uniform(2, 5):.2f}s"/>'
-
-          hero = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="ByCronoz - Vibe Coder">
-          <defs>
-          <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stop-color="#0d0b1a"><animate attributeName="stop-color" values="#0d0b1a;#1b0d33;#2a0d3a;#1b0d33;#0d0b1a" dur="12s" repeatCount="indefinite"/></stop>
-          <stop offset="1" stop-color="#2a0f3f"><animate attributeName="stop-color" values="#2a0f3f;#3a0f4a;#1b0d33;#3a0f4a;#2a0f3f" dur="12s" repeatCount="indefinite"/></stop>
-          </linearGradient>
-          <linearGradient id="title" gradientUnits="userSpaceOnUse" x1="260" y1="0" x2="740" y2="0" spreadMethod="reflect">
-          <stop offset="0" stop-color="#9d4edd"/><stop offset="0.5" stop-color="#ffffff"/><stop offset="1" stop-color="#ff4fa3"/>
-          <animateTransform attributeName="gradientTransform" type="translate" from="-480 0" to="480 0" dur="6s" repeatCount="indefinite"/>
-          </linearGradient>
-          <radialGradient id="orbP"><stop offset="0" stop-color="#9d4edd" stop-opacity=".55"/><stop offset="1" stop-color="#9d4edd" stop-opacity="0"/></radialGradient>
-          <radialGradient id="orbK"><stop offset="0" stop-color="#ff4fa3" stop-opacity=".45"/><stop offset="1" stop-color="#ff4fa3" stop-opacity="0"/></radialGradient>
-          <filter id="glow" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
-          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#c77dff" stroke-opacity=".07"/></pattern>
-          <clipPath id="card"><rect width="{W}" height="{H}" rx="18"/></clipPath>
-          {clips}</defs>
-          <style>
-          .title{{font:800 92px 'Segoe UI',Arial,Helvetica,sans-serif;animation:rise 1.2s ease-out both}}
-          .sub{{font:600 18px 'Segoe UI',Arial,sans-serif;letter-spacing:10px;fill:#e0b3ff;animation:rise 1.4s .3s ease-out both}}
-          .type{{font:600 24px Consolas,'Courier New',monospace;fill:#f3e8ff}}
-          .star{{animation:tw 3s ease-in-out infinite}}
-          .blink{{animation:bl 1s steps(1) infinite}}
-          .line{{animation:rise 1.4s .5s ease-out both}}
-          @keyframes rise{{from{{opacity:0;transform:translateY(16px)}}to{{opacity:1;transform:translateY(0)}}}}
-          @keyframes tw{{0%,100%{{opacity:.15}}50%{{opacity:1}}}}
-          @keyframes bl{{0%,100%{{opacity:1}}50%{{opacity:0}}}}
-          </style>
-          <g clip-path="url(#card)">
-          <rect width="{W}" height="{H}" fill="url(#bg)"/>
-          <rect width="{W}" height="{H}" fill="url(#grid)"/>
-          <circle cx="180" cy="120" r="170" fill="url(#orbP)"><animateTransform attributeName="transform" type="translate" values="0 0;90 40;30 -30;0 0" dur="14s" repeatCount="indefinite"/></circle>
-          <circle cx="830" cy="170" r="190" fill="url(#orbK)"><animateTransform attributeName="transform" type="translate" values="0 0;-100 -30;-30 40;0 0" dur="16s" repeatCount="indefinite"/></circle>
-          {stars}
-          <text x="500" y="135" text-anchor="middle" class="title" fill="#9d4edd" opacity=".55" filter="url(#glow)">ByCronoz</text>
-          <text x="500" y="135" text-anchor="middle" class="title" fill="url(#title)">ByCronoz</text>
-          <text x="500" y="176" text-anchor="middle" class="sub">VIBE CODER</text>
-          <rect x="420" y="190" width="160" height="2" rx="1" fill="#c77dff" opacity=".6" class="line"/>
-          {texts}{cursor}
-          </g>
-          <rect x="1" y="1" width="{W-2}" height="{H-2}" rx="18" fill="none" stroke="#c77dff" stroke-opacity=".35"/>
-          </svg>'''
-
-          contrib = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 64" width="1000" height="64" role="img" aria-label="Contribuições">
-          <defs>
-          <linearGradient id="g" gradientUnits="userSpaceOnUse" x1="0" x2="1000" spreadMethod="reflect">
-          <stop offset="0" stop-color="#9d4edd"/><stop offset=".5" stop-color="#ff4fa3"/><stop offset="1" stop-color="#9d4edd"/>
-          <animateTransform attributeName="gradientTransform" type="translate" from="-1000 0" to="1000 0" dur="8s" repeatCount="indefinite"/>
-          </linearGradient>
-          </defs>
-          <style>
-          .t{font:800 26px 'Segoe UI',Arial,sans-serif;letter-spacing:6px;fill:#f3e8ff;animation:in 1s ease-out both}
-          .s{font:500 14px Consolas,'Courier New',monospace;fill:#c77dff;opacity:.8}
-          .p{transform-origin:22px 28px;animation:pulse 1.8s ease-out infinite}
-          @keyframes in{from{opacity:0;transform:translateX(-14px)}to{opacity:1;transform:none}}
-          @keyframes pulse{0%{transform:scale(1);opacity:.8}100%{transform:scale(3.2);opacity:0}}
-          </style>
-          <circle class="p" cx="22" cy="28" r="6" fill="#ff4fa3"/>
-          <circle cx="22" cy="28" r="6" fill="#ff4fa3"/>
-          <text x="46" y="38" class="t">CONTRIBUIÇÕES</text>
-          <text x="978" y="36" text-anchor="end" class="s">// último ano</text>
-          <rect x="0" y="54" width="1000" height="3" rx="1.5" fill="url(#g)"/>
-          </svg>'''
-
-          divider = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 4" width="1000" height="4" preserveAspectRatio="none">
-          <defs><linearGradient id="d" gradientUnits="userSpaceOnUse" x1="0" x2="500" spreadMethod="reflect">
-          <stop offset="0" stop-color="#9d4edd" stop-opacity="0"/><stop offset=".5" stop-color="#c77dff"/><stop offset="1" stop-color="#ff4fa3" stop-opacity="0"/>
-          <animateTransform attributeName="gradientTransform" type="translate" from="-500 0" to="500 0" dur="5s" repeatCount="indefinite"/></linearGradient></defs>
-          <rect width="1000" height="4" rx="2" fill="url(#d)"/></svg>'''
-
-          for name, data in (("hero.svg", hero), ("contrib.svg", contrib), ("divider.svg", divider)):
-              with open("dist/" + name, "w", encoding="utf-8") as f:
-                  f.write(data)
-          PYEOF
-
       - uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-snake.svg?color_snake=#ff4fa3&color_dots=#ebe4f5,#d9b8ff,#b66bff,#8a2be2,#5b1a9e&size_dot_border_radius=3
-            dist/github-snake-dark.svg?color_snake=#ff4fa3&color_dots=#161022,#3b1d5a,#6a2fb0,#9d4edd,#c77dff&size_dot_border_radius=3
+            dist/github-snake.svg?color_snake=#9d4edd&color_dots=#ebedf0,#d9b8ff,#b66bff,#8a2be2,#5b1a9e
+            dist/github-snake-dark.svg?color_snake=#c77dff&color_dots=#161b22,#3b1d5a,#6a2fb0,#9d4edd,#c77dff
 
       - uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
